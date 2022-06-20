@@ -48,6 +48,7 @@ public class Main {
     static void checkValue(String[][] array) throws MyArraySizeException {
         if (array.length != sizeA || array[0].length != sizeB) throw new MyArraySizeException();
     }
+
 }
 
 
