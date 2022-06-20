@@ -1,5 +1,5 @@
 public class MyArraySizeException extends Exception {
     public MyArraySizeException() {
-        super("Ошибка размера");
+        super("РћС€РёР±РєР° СЂР°Р·РјРµСЂР°");
     }
 }

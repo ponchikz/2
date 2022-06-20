@@ -10,19 +10,19 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            System.out.println("Сумма массива: " + getSumm(arrayDataException));
+            System.out.println("РЎСѓРјРјР° РјР°СЃСЃРёРІР°: " + getSumm(arrayDataException));
         } catch (MyArraySizeException | MyArrayDataException ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            System.out.println("Сумма массива: " + getSumm(arraySizeException));
+            System.out.println("РЎСѓРјРјР° РјР°СЃСЃРёРІР°: " + getSumm(arraySizeException));
         } catch (MyArraySizeException | MyArrayDataException ex) {
             System.out.println(ex.getMessage());
         }
 
         try {
-            System.out.println("Сумма массива: " + getSumm(arrayErrorException));
+            System.out.println("РЎСѓРјРјР° РјР°СЃСЃРёРІР°: " + getSumm(arrayErrorException));
         } catch (MyArraySizeException | MyArrayDataException ex) {
             System.out.println(ex.getMessage());
         }
@@ -40,7 +40,7 @@ public class Main {
                 }
             }
         } catch (NumberFormatException ex) {
-            throw new MyArrayDataException("Ошибка в позиции: " + i + "," + j);
+            throw new MyArrayDataException("РћС€РёР±РєР° РІ РїРѕР·РёС†РёРё: " + i + "," + j);
         }
 
         return result;
@@ -49,6 +49,7 @@ public class Main {
         if (array.length != sizeA || array[0].length != sizeB) throw new MyArraySizeException();
     }
 }
+
 
 
 
